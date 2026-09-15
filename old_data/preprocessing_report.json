@@ -1,0 +1,48 @@
+{
+  "files": {
+    "empty_20260913_144154.csv": {
+      "accepted": 1183,
+      "payload_length_mismatch": 1,
+      "unsupported_csi_length": 8
+    },
+    "empty_20260913_144433.csv": {
+      "accepted": 1112,
+      "unsupported_csi_length": 35,
+      "payload_length_mismatch": 1
+    },
+    "empty_20260913_155356.csv": {
+      "numeric_parse": 1,
+      "accepted": 1198
+    },
+    "empty_20260913_155832.csv": {
+      "accepted": 1202
+    },
+    "motion_20260913_123913.csv": {
+      "accepted": 1188,
+      "unsupported_csi_length": 12
+    },
+    "motion_20260913_152240.csv": {
+      "accepted": 1204,
+      "numeric_parse": 1
+    },
+    "motion_20260913_152957.csv": {
+      "accepted": 1200,
+      "unsupported_csi_length": 2
+    },
+    "occupied_20260913_121335.csv": {
+      "accepted": 1200
+    },
+    "occupied_20260913_121834.csv": {
+      "accepted": 1201
+    },
+    "occupied_20260913_122105.csv": {
+      "accepted": 1200
+    }
+  },
+  "totals": {
+    "accepted": 11888,
+    "payload_length_mismatch": 2,
+    "unsupported_csi_length": 57,
+    "numeric_parse": 2
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "input": "data/csi_features.npz",
+  "trees": 300,
+  "random_state": 42,
+  "sessions": 10,
+  "total_windows": 1146,
+  "mean_session_accuracy": 0.6386213281338252,
+  "overall_accuracy": 0.6273996509598604,
+  "classes": [
+    "empty",
+    "motion",
+    "occupied"
+  ],
+  "folds": [
+    {
+      "session": "empty_20260913_144154",
+      "label": "empty",
+      "windows": 113,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          113,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "empty_20260913_144433",
+      "label": "empty",
+      "windows": 86,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          86,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "empty_20260913_155356",
+      "label": "empty",
+      "windows": 118,
+      "accuracy": 0.8559322033898306,
+      "confusion_matrix": [
+        [
+          101,
+          17,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "empty_20260913_155832",
+      "label": "empty",
+      "windows": 118,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          118,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260913_123913",
+      "label": "motion",
+      "windows": 116,
+      "accuracy": 0.034482758620689655,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          4,
+          108
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260913_152240",
+      "label": "motion",
+      "windows": 119,
+      "accuracy": 0.31092436974789917,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          37,
+          81
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260913_152957",
+      "label": "motion",
+      "windows": 119,
+      "accuracy": 0.680672268907563,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          81,
+          25
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260913_121335",
+      "label": "occupied",
+      "windows": 119,
+      "accuracy": 0.14285714285714285,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          96,
+          17
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260913_121834",
+      "label": "occupied",
+      "windows": 119,
+      "accuracy": 0.7310924369747899,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          87
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260913_122105",
+      "label": "occupied",
+      "windows": 119,
+      "accuracy": 0.6302521008403361,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          44,
+          75
+        ]
+      ]
+    }
+  ],
+  "overall_confusion_matrix": [
+    [
+      418,
+      17,
+      0
+    ],
+    [
+      18,
+      122,
+      214
+    ],
+    [
+      6,
+      172,
+      179
+    ]
+  ],
+  "classification_report": {
+    "empty": {
+      "precision": 0.9457013574660633,
+      "recall": 0.960919540229885,
+      "f1-score": 0.9532497149372862,
+      "support": 435.0
+    },
+    "motion": {
+      "precision": 0.39228295819935693,
+      "recall": 0.3446327683615819,
+      "f1-score": 0.3669172932330827,
+      "support": 354.0
+    },
+    "occupied": {
+      "precision": 0.455470737913486,
+      "recall": 0.5014005602240896,
+      "f1-score": 0.47733333333333333,
+      "support": 357.0
+    },
+    "accuracy": 0.6273996509598604,
+    "macro avg": {
+      "precision": 0.5978183511929688,
+      "recall": 0.6023176229385189,
+      "f1-score": 0.5991667805012341,
+      "support": 1146.0
+    },
+    "weighted avg": {
+      "precision": 0.6220343029104926,
+      "recall": 0.6273996509598604,
+      "f1-score": 0.6238746490420862,
+      "support": 1146.0
+    }
+  }
+}

@@ -7,8 +7,8 @@ from pathlib import Path
 import numpy as np
 
 
-DEFAULT_WINDOW_SIZE = 20
-DEFAULT_STEP = 10
+DEFAULT_WINDOW_SIZE = 50
+DEFAULT_STEP = 25
 DEFAULT_MAX_GAP_MS = 250
 
 
@@ -27,6 +27,7 @@ def feature_names(subcarrier_count):
     names.extend(f"amplitude_mean_{index}" for index in range(subcarrier_count))
     names.extend(f"amplitude_std_{index}" for index in range(subcarrier_count))
     names.extend(f"amplitude_diff_std_{index}" for index in range(subcarrier_count))
+    names.extend(f"amplitude_abs_diff_mean_{index}" for index in range(subcarrier_count))
     return names
 
 
@@ -48,6 +49,7 @@ def window_features(rssi, amplitude):
             amplitude.mean(axis=0),
             amplitude.std(axis=0),
             differences.std(axis=0),
+            np.abs(differences).mean(axis=0),
         ]
     ).astype(np.float32)
 

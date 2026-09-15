@@ -2,10 +2,10 @@
   "input": "data/csi_features.npz",
   "trees": 300,
   "random_state": 42,
-  "sessions": 10,
-  "total_windows": 1146,
-  "mean_session_accuracy": 0.6386213281338252,
-  "overall_accuracy": 0.6273996509598604,
+  "sessions": 32,
+  "total_windows": 1464,
+  "mean_session_accuracy": 0.776892313878772,
+  "overall_accuracy": 0.7814207650273224,
   "classes": [
     "empty",
     "motion",
@@ -13,13 +13,36 @@
   ],
   "folds": [
     {
-      "session": "empty_20260913_144154",
+      "session": "empty_20260915_223242",
       "label": "empty",
-      "windows": 113,
+      "windows": 47,
+      "accuracy": 0.9787234042553191,
+      "confusion_matrix": [
+        [
+          46,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "empty_20260915_224756",
+      "label": "empty",
+      "windows": 47,
       "accuracy": 1.0,
       "confusion_matrix": [
         [
-          113,
+          47,
           0,
           0
         ],
@@ -36,13 +59,13 @@
       ]
     },
     {
-      "session": "empty_20260913_144433",
+      "session": "empty_20260915_225035",
       "label": "empty",
-      "windows": 86,
+      "windows": 47,
       "accuracy": 1.0,
       "confusion_matrix": [
         [
-          86,
+          47,
           0,
           0
         ],
@@ -59,36 +82,13 @@
       ]
     },
     {
-      "session": "empty_20260913_155356",
+      "session": "empty_20260915_225311",
       "label": "empty",
-      "windows": 118,
-      "accuracy": 0.8559322033898306,
-      "confusion_matrix": [
-        [
-          101,
-          17,
-          0
-        ],
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "session": "empty_20260913_155832",
-      "label": "empty",
-      "windows": 118,
+      "windows": 47,
       "accuracy": 1.0,
       "confusion_matrix": [
         [
-          118,
+          47,
           0,
           0
         ],
@@ -105,33 +105,33 @@
       ]
     },
     {
-      "session": "motion_20260913_123913",
+      "session": "empty_20260915_225833",
+      "label": "empty",
+      "windows": 47,
+      "accuracy": 0.9574468085106383,
+      "confusion_matrix": [
+        [
+          45,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_221443",
       "label": "motion",
-      "windows": 116,
-      "accuracy": 0.034482758620689655,
-      "confusion_matrix": [
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          4,
-          4,
-          108
-        ],
-        [
-          0,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "session": "motion_20260913_152240",
-      "label": "motion",
-      "windows": 119,
-      "accuracy": 0.31092436974789917,
+      "windows": 47,
+      "accuracy": 0.9148936170212766,
       "confusion_matrix": [
         [
           0,
@@ -140,8 +140,8 @@
         ],
         [
           1,
-          37,
-          81
+          43,
+          3
         ],
         [
           0,
@@ -151,10 +151,10 @@
       ]
     },
     {
-      "session": "motion_20260913_152957",
+      "session": "motion_20260915_221719",
       "label": "motion",
-      "windows": 119,
-      "accuracy": 0.680672268907563,
+      "windows": 41,
+      "accuracy": 0.3902439024390244,
       "confusion_matrix": [
         [
           0,
@@ -162,8 +162,8 @@
           0
         ],
         [
-          13,
-          81,
+          0,
+          16,
           25
         ],
         [
@@ -174,62 +174,11 @@
       ]
     },
     {
-      "session": "occupied_20260913_121335",
-      "label": "occupied",
-      "windows": 119,
-      "accuracy": 0.14285714285714285,
+      "session": "motion_20260915_221947",
+      "label": "motion",
+      "windows": 44,
+      "accuracy": 1.0,
       "confusion_matrix": [
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          6,
-          96,
-          17
-        ]
-      ]
-    },
-    {
-      "session": "occupied_20260913_121834",
-      "label": "occupied",
-      "windows": 119,
-      "accuracy": 0.7310924369747899,
-      "confusion_matrix": [
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          32,
-          87
-        ]
-      ]
-    },
-    {
-      "session": "occupied_20260913_122105",
-      "label": "occupied",
-      "windows": 119,
-      "accuracy": 0.6302521008403361,
-      "confusion_matrix": [
-        [
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -238,59 +187,616 @@
         [
           0,
           44,
-          75
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_231117",
+      "label": "motion",
+      "windows": 47,
+      "accuracy": 0.0425531914893617,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          45
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_231503",
+      "label": "motion",
+      "windows": 47,
+      "accuracy": 0.5957446808510638,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          28,
+          19
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_233417",
+      "label": "motion",
+      "windows": 38,
+      "accuracy": 0.9210526315789473,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_233725",
+      "label": "motion",
+      "windows": 46,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          46,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_233959",
+      "label": "motion",
+      "windows": 46,
+      "accuracy": 0.782608695652174,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          36,
+          5
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_234215",
+      "label": "motion",
+      "windows": 47,
+      "accuracy": 0.9787234042553191,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          46,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260915_234508",
+      "label": "motion",
+      "windows": 46,
+      "accuracy": 0.8043478260869565,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          37,
+          9
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260916_000717",
+      "label": "motion",
+      "windows": 46,
+      "accuracy": 0.5,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          23,
+          23
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "motion_20260916_000955",
+      "label": "motion",
+      "windows": 47,
+      "accuracy": 0.9361702127659575,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          44,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_215930",
+      "label": "occupied",
+      "windows": 46,
+      "accuracy": 0.9347826086956522,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          43
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_220146",
+      "label": "occupied",
+      "windows": 43,
+      "accuracy": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          43
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_220441",
+      "label": "occupied",
+      "windows": 45,
+      "accuracy": 0.8,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          36
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_230647",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.9361702127659575,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          44
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_230858",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.7021276595744681,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          33
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_232246",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.8936170212765957,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          42
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_232456",
+      "label": "occupied",
+      "windows": 46,
+      "accuracy": 0.6956521739130435,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          32
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_232712",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.851063829787234,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          40
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_232934",
+      "label": "occupied",
+      "windows": 38,
+      "accuracy": 0.02631578947368421,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          37,
+          1
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_233156",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.40425531914893614,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          28,
+          19
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_235035",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.9574468085106383,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          45
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_235301",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.8723404255319149,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          41
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_235526",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.9361702127659575,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          44
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260915_235936",
+      "label": "occupied",
+      "windows": 47,
+      "accuracy": 0.7872340425531915,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          37
+        ]
+      ]
+    },
+    {
+      "session": "occupied_20260916_000301",
+      "label": "occupied",
+      "windows": 46,
+      "accuracy": 0.2608695652173913,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          34,
+          12
         ]
       ]
     }
   ],
   "overall_confusion_matrix": [
     [
-      418,
-      17,
+      232,
+      3,
       0
     ],
     [
-      18,
-      122,
-      214
+      6,
+      400,
+      136
     ],
     [
-      6,
+      3,
       172,
-      179
+      512
     ]
   ],
   "classification_report": {
     "empty": {
-      "precision": 0.9457013574660633,
-      "recall": 0.960919540229885,
-      "f1-score": 0.9532497149372862,
-      "support": 435.0
+      "precision": 0.9626556016597511,
+      "recall": 0.9872340425531915,
+      "f1-score": 0.9747899159663865,
+      "support": 235.0
     },
     "motion": {
-      "precision": 0.39228295819935693,
-      "recall": 0.3446327683615819,
-      "f1-score": 0.3669172932330827,
-      "support": 354.0
+      "precision": 0.6956521739130435,
+      "recall": 0.7380073800738007,
+      "f1-score": 0.7162041181736795,
+      "support": 542.0
     },
     "occupied": {
-      "precision": 0.455470737913486,
-      "recall": 0.5014005602240896,
-      "f1-score": 0.47733333333333333,
-      "support": 357.0
+      "precision": 0.7901234567901234,
+      "recall": 0.745269286754003,
+      "f1-score": 0.7670411985018727,
+      "support": 687.0
     },
-    "accuracy": 0.6273996509598604,
+    "accuracy": 0.7814207650273224,
     "macro avg": {
-      "precision": 0.5978183511929688,
-      "recall": 0.6023176229385189,
-      "f1-score": 0.5991667805012341,
-      "support": 1146.0
+      "precision": 0.8161437441209727,
+      "recall": 0.8235035697936649,
+      "f1-score": 0.8193450775473129,
+      "support": 1464.0
     },
     "weighted avg": {
-      "precision": 0.6220343029104926,
-      "recall": 0.6273996509598604,
-      "f1-score": 0.6238746490420862,
-      "support": 1146.0
+      "precision": 0.7828431417115613,
+      "recall": 0.7814207650273224,
+      "f1-score": 0.7815680093394957,
+      "support": 1464.0
     }
   }
 }

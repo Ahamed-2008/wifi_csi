@@ -76,6 +76,17 @@ void loop() {
     sendUdpPacket();
   }
 
+  int packetSize = udp.parsePacket();
+  if (packetSize > 0) {
+    IPAddress remoteIp = udp.remoteIP();
+    int remotePort = udp.remotePort();
+    uint8_t discardBuffer[64];
+    udp.read(discardBuffer, sizeof(discardBuffer));
+    udp.beginPacket(remoteIp, remotePort);
+    udp.print("ECHO_ACK");
+    udp.endPacket();
+  }
+
   // ---- Heartbeat LED blink every HEARTBEAT_INTERVAL_MS ----
   if (now - lastHeartbeatTime >= HEARTBEAT_INTERVAL_MS) {
     lastHeartbeatTime = now;
